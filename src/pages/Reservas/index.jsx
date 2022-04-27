@@ -14,7 +14,7 @@ const Reservas = () => {
         <div key={index} className="reservas">
           <img src={reserve.image} alt={reserve.title} />
           <strong>{reserve.title}</strong>
-          <span>Quantidade: 2</span>
+          <span>Quantidade: {reserve.quantidade}</span>
           <button type="button" onClick={() => {}}>
             <MdDelete size={20} color="#000" />
           </button>
