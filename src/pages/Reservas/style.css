@@ -31,3 +31,15 @@ footer button {
   margin-top: 10px;
   font-weight: bold;
 }
+
+.reservas #quantidade {
+  display: flex;
+  align-items: center;
+}
+
+.reservas #quantidade input {
+  border: 1px solid #eee;
+  color: #191919;
+  padding: 5px;
+  width: 45px;
+}

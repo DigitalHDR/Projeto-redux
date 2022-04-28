@@ -11,3 +11,12 @@ export function renoveReserve(id) {
     id, //isto é o que esta sendo enviado
   }
 }
+
+export function updateAmoutReserve(id, quantidade) {
+  return {
+    type: 'UPDATE_RESERVA',
+    id, //isto é o que esta sendo enviado
+    quantidade,
+  }
+}
+
