@@ -2,16 +2,14 @@ import React from 'react'
 import './style.css'
 import { MdDelete } from 'react-icons/md'
 import { useSelector, useDispatch } from 'react-redux'
+import { renoveReserve } from '../../store/modules/reserve/actions'
 
 const Reservas = () => {
   const dispatch = useDispatch()
   const reserve = useSelector((state) => state.reserve)
 
   function handleRemove(id) {
-    dispatch({
-      type: 'REMOVE_RESERVA',
-      id,
-    })
+    dispatch(renoveReserve(id))
   }
 
   console.log('minha reserva', reserve)

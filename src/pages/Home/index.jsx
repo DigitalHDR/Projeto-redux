@@ -3,6 +3,7 @@ import api from '../../services/api'
 import { MdOutlineFlightTakeoff } from 'react-icons/md'
 import './style.css'
 import { useDispatch } from 'react-redux'
+import { addReserve } from '../../store/modules/reserve/actions'
 
 const Home = () => {
   const dispatch = useDispatch()
@@ -17,10 +18,7 @@ const Home = () => {
   }, [])
 
   function handleAdd(trip) {
-    dispatch({
-      type: 'ADD_RESERVE',
-      trip, //isto é o que esta sendo enviado
-    })
+    dispatch(addReserve(trip))
   }
 
   return (
