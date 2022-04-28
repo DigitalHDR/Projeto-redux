@@ -15,6 +15,16 @@ export default function reserve(state = [], action) {
           })
         }
       })
+
+    case 'REMOVE_RESERVA':
+      return produce(state, (draft) => {
+        const tripIndex = draft.findIndex((trip) => trip.id === action.id) // aqui não é action.trip.id, porque i id já esta sendo enviado la no dispath
+
+        if (tripIndex >= 0) {
+          draft.splice(tripIndex, 1) //remove o tripIndex no 1° elemento que achar
+        }
+      })
+
     default:
       return state
   }
