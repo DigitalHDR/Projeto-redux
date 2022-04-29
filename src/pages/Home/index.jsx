@@ -34,4 +34,7 @@ const Home = () => {
   )
 }
 
+
+{/* <alinhamento do batao dentro do card sempre em baixo tendo descrição grande ou pequena so funciona com gri e grid-gap */}
+
 export default Home
