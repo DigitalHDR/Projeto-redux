@@ -1,3 +1,5 @@
+//alinhamento do batao dentro do card sempre em baixo tendo descrição grande ou pequena so funciona com gri e grid-gap
+
 .box {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
